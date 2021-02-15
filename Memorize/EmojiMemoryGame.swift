@@ -36,4 +36,7 @@ class EmojiMemoryGame: ObservableObject {
 //        objectWillChange.send() //세계로 publish된다. 어떤 것이 변할 때마다 이걸 호출하면 된다. 언제든지! -> 이거대신 @Publishedq를 사용하여 번거로움을 줄인다
         model.choose(card: card)    //Model에 Card를 선택하라고 ask한다
     }
+    func resetGame() {
+        model = EmojiMemoryGame.createMemoryGame()
+    }
 }
