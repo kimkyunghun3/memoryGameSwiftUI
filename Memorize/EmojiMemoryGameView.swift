@@ -55,6 +55,7 @@ struct CardView: View {
                 }
             .cardify(isFaceUp: card.isFaceUp)
              .transition(AnyTransition.scale)
+             
         }
     }
     
